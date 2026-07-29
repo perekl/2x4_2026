@@ -1,0 +1,41 @@
+{
+  "cutouts-sheet.png": {
+    "description": "Photorealistic cutouts — Bob rows then Perek rows, left side of combined sheet",
+    "outputDir": "public/assets",
+    "sprites": [
+      { "name": "suspects/bob-judge.png", "label": "Bob — Judge robes" },
+      { "name": "suspects/bob-golf.png", "label": "Bob — Golf swing (primary full body)" },
+      { "name": "suspects/bob-attorney.png", "label": "Bob — Defense attorney" },
+      { "name": "suspects/bob-casual.png", "label": "Bob — Hoodie casual" },
+      { "name": "suspects/bob-expression-1.png", "label": "Bob — Expression 1" },
+      { "name": "suspects/bob-expression-2.png", "label": "Bob — Expression 2" },
+      { "name": "suspects/bob-maniac.png", "label": "Bob — Horned hat" },
+      { "name": "suspects/bob-mugshot.png", "label": "Bob — Mugshot POB341" },
+      { "name": "suspects/perek-golf.png", "label": "Perek — Golf bag (primary full body)" },
+      { "name": "suspects/perek-attorney.png", "label": "Perek — Pointing attorney" },
+      { "name": "suspects/perek-scribe.png", "label": "Perek — Notepad scribe" },
+      { "name": "suspects/perek-casual.png", "label": "Perek — Hoodie casual" },
+      { "name": "suspects/perek-expression-1.png", "label": "Perek — Expression 1" },
+      { "name": "suspects/perek-expression-2.png", "label": "Perek — Pacifier" },
+      { "name": "suspects/perek-mugshot.png", "label": "Perek — Mugshot P029477S" },
+      { "name": "suspects/perek-inmate.png", "label": "Perek — Orange jumpsuit" }
+    ]
+  },
+  "posters-sheet.png": {
+    "description": "Movie poster style — dramatic Bob and Perek posters",
+    "outputDir": "public/assets/posters",
+    "sprites": [
+      { "name": "bob-judge-poster.png", "label": "YOUR HONOR. LET'S SETTLE THIS." },
+      { "name": "bob-golfer-poster.png", "label": "Bob — Fiery golfer" },
+      { "name": "bob-investigator-poster.png", "label": "Bob — Investigator" },
+      { "name": "bob-maniac-poster.png", "label": "Bob — Maniac close-up" },
+      { "name": "bob-attorney-poster.png", "label": "DEFENSE ATTORNEY poster" },
+      { "name": "perek-golf-poster.png", "label": "Perek — Caddy/player" },
+      { "name": "perek-accuser-poster.png", "label": "Perek — Accuser" },
+      { "name": "perek-scribe-poster.png", "label": "TAKING NOTES poster" },
+      { "name": "perek-pacifier-poster.png", "label": "Perek — Pacifier dramatic" },
+      { "name": "perek-objection-poster.png", "label": "OBJECTION! poster" },
+      { "name": "perek-inmate-poster.png", "label": "CONVICTED. SENTENCED TO BIRDIES." }
+    ]
+  }
+}

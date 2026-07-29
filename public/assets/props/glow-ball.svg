@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <radialGradient id="glow" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#e8ffe8"/>
+      <stop offset="40%" stop-color="#39ff14"/>
+      <stop offset="100%" stop-color="#0a3d0a"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <circle cx="60" cy="60" r="35" fill="#39ff14" opacity="0.4" filter="url(#blur)"/>
+  <circle cx="60" cy="60" r="28" fill="url(#glow)" stroke="#39ff14" stroke-width="1"/>
+  <ellipse cx="48" cy="48" rx="8" ry="5" fill="white" opacity="0.35"/>
+</svg>

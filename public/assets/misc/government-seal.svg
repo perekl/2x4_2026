@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <circle cx="100" cy="100" r="95" stroke="#c9a227" stroke-width="3" fill="#0a1628"/>
+  <circle cx="100" cy="100" r="82" stroke="#c9a227" stroke-width="1.5" fill="none"/>
+  <circle cx="100" cy="100" r="70" stroke="#c9a227" stroke-width="1" fill="none" opacity="0.6"/>
+  <text x="100" y="55" text-anchor="middle" fill="#c9a227" font-family="Georgia, serif" font-size="9" letter-spacing="3">DEPARTMENT OF</text>
+  <text x="100" y="72" text-anchor="middle" fill="#c9a227" font-family="Georgia, serif" font-size="11" font-weight="bold" letter-spacing="2">RECREATIONAL JUSTICE</text>
+  <polygon points="100,85 108,105 130,105 112,118 118,140 100,127 82,140 88,118 70,105 92,105" fill="#c9a227" opacity="0.9"/>
+  <text x="100" y="158" text-anchor="middle" fill="#c9a227" font-family="Georgia, serif" font-size="8" letter-spacing="2">EST. 2026</text>
+  <text x="100" y="175" text-anchor="middle" fill="#c9a227" font-family="Georgia, serif" font-size="7" letter-spacing="1.5" opacity="0.7">VERITAS IN PAR</text>
+</svg>
