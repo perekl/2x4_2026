@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { SectionHeader } from './Suspects'
 
 type Entity = { x: number; y: number; type: 'groundskeeper' | 'sprinkler' | 'goose'; angle?: number; speed?: number }
@@ -52,6 +51,10 @@ export function MiniGame() {
   const startGame = () => {
     initGame()
     setPlaying(true)
+  }
+
+  const restartGame = () => {
+    startGame()
   }
 
   useEffect(() => {
@@ -242,41 +245,47 @@ export function MiniGame() {
         <div className="mt-12 flex flex-col items-center">
           <div className="relative border-2 border-brass/30 rounded-lg overflow-hidden shadow-2xl">
             <canvas ref={canvasRef} width={W} height={H} className="block max-w-full" />
-            {!playing && !gameOver && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/70">
-                <button onClick={startGame} className="nav-btn px-8 py-3">
-                  BEGIN INFILTRATION
-                </button>
+            {!playing && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/70 px-6">
+                {gameOver ? (
+                  <>
+                    {caught ? (
+                      <p className="border-4 border-red-600 text-red-500 font-display text-xl px-6 py-2 rotate-[-3deg]">
+                        SENTENCE INCREASED.
+                      </p>
+                    ) : (
+                      <p className="text-neon font-mono text-sm text-center">
+                        All evidence collected. Return to base.
+                      </p>
+                    )}
+                    <button onClick={restartGame} className="nav-btn px-8 py-3 w-auto">
+                      RESTART MISSION
+                    </button>
+                  </>
+                ) : (
+                  <button onClick={startGame} className="nav-btn px-8 py-3 w-auto">
+                    BEGIN INFILTRATION
+                  </button>
+                )}
               </div>
             )}
           </div>
 
-          <div className="flex gap-6 mt-4 font-mono text-sm">
-            <span className="text-neon">Balls: {score.balls}</span>
-            <span className="text-brass">Tees: {score.tees}</span>
-            <span className="text-paper/60">Markers: {score.markers}</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+            <div className="flex gap-6 font-mono text-sm">
+              <span className="text-neon">Balls: {score.balls}</span>
+              <span className="text-brass">Tees: {score.tees}</span>
+              <span className="text-paper/60">Markers: {score.markers}</span>
+            </div>
+            {playing && (
+              <button
+                onClick={restartGame}
+                className="font-mono text-xs tracking-widest text-paper/40 hover:text-brass border border-paper/20 hover:border-brass/40 px-4 py-2 transition-colors"
+              >
+                RESTART
+              </button>
+            )}
           </div>
-
-          <AnimatePresence>
-            {caught && (
-              <motion.div
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                className="mt-4 border-4 border-red-600 text-red-500 font-display text-xl px-6 py-2 rotate-[-3deg]"
-              >
-                SENTENCE INCREASED.
-              </motion.div>
-            )}
-            {gameOver && !caught && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="mt-4 text-neon font-mono text-sm"
-              >
-                All evidence collected. Return to base.
-              </motion.p>
-            )}
-          </AnimatePresence>
         </div>
       </div>
     </section>
