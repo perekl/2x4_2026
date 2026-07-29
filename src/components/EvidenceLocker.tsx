@@ -34,6 +34,7 @@ export function EvidenceLocker({ onGlowBallClick, glowIntensity = 1 }: EvidenceL
         opacity: 0,
         stagger: 0.1,
         duration: 0.5,
+        clearProps: 'opacity',
       })
     }
   }, [])
@@ -47,19 +48,22 @@ export function EvidenceLocker({ onGlowBallClick, glowIntensity = 1 }: EvidenceL
           subtitle="Handle with gloves. Some items may still be glowing."
         />
 
-        <div ref={cabinetRef} className="evidence-cabinet mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div ref={cabinetRef} className="evidence-cabinet mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
           {EXHIBITS.map((exhibit) => (
             <motion.button
               key={exhibit.id}
               className="evidence-folder group"
               onClick={() => setOpenFolder(exhibit.id)}
-              whileHover={{ scale: 1.03 }}
+              whileHover={{ scale: 1.04, y: -4 }}
               whileTap={{ scale: 0.98 }}
             >
-              <div className="folder-tab">EXHIBIT {exhibit.id}</div>
+              <div className="folder-tab">
+                <span className="folder-tab-letter">{exhibit.id}</span>
+                EXHIBIT {exhibit.id}
+              </div>
               <div className="folder-body">
                 <span className="folder-label">{exhibit.title}</span>
-                <div className="folder-glow" />
+                {exhibit.assetKey === 'glowBall' && <div className="folder-glow folder-glow-strong" />}
               </div>
             </motion.button>
           ))}
