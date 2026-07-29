@@ -27,18 +27,18 @@ export function CrimeScene() {
 
         <div
           ref={mapRef}
-          className="crime-map relative mt-12 aspect-[16/10] rounded-lg overflow-hidden cursor-none"
+          className="crime-map crime-map-satellite relative mt-12 aspect-[16/10] rounded-lg overflow-hidden cursor-none"
           onMouseMove={handleMouseMove}
         >
           <AssetImage
             src={ASSETS.crimeScene.aerial}
-            alt="Aerial map of golf course"
-            className="w-full h-full object-cover opacity-40"
+            alt="Aerial surveillance map of golf course"
+            className="crime-map-satellite-img w-full h-full object-cover"
             fallbackClassName="w-full h-full crime-map-fallback"
             label="Aerial Map"
           />
 
-          <div className="crime-map-overlay absolute inset-0 bg-midnight/60" />
+          <div className="crime-map-overlay absolute inset-0" />
 
           {/* Flashlight */}
           <div

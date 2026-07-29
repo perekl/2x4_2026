@@ -20,7 +20,7 @@ All images load from `/public/assets/`. Drop a file at the path below and refres
 | `evidence/flashlight.jpg` | Exhibit C |
 | `evidence/tire-tracks.jpg` | Exhibit D |
 | `evidence/scorecard.jpg` | Exhibit E |
-| `crime-scene/aerial-map.jpg` | Crime Scene map background |
+| `crime-scene/aerial-map.jpg` | Crime Scene map background — **replace with your Google Earth / satellite screenshot** |
 | `courtroom/background.jpg` | Courtroom section backdrop |
 | `misc/goose.png` | Witness Statements — Goose |
 | `props/glow-ball.png` | Mini game collectibles |

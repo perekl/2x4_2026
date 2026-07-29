@@ -106,10 +106,10 @@ export const WITNESSES = [
 ] as const
 
 export const CRIME_MARKERS = [
-  { id: 1, x: 22, y: 35, label: 'Fairway 14', detail: 'Primary impact zone. Multiple glowing projectiles observed crossing airspace.' },
-  { id: 2, x: 48, y: 28, label: 'Bunker 7', detail: 'Suspect #2 last known position. Sand disturbed in suspicious arc pattern.' },
-  { id: 3, x: 65, y: 55, label: 'Clubhouse Perimeter', detail: 'Unauthorized approach vector. Security camera offline (coincidence?).' },
-  { id: 4, x: 38, y: 72, label: 'Water Hazard', detail: 'Recovered glow ball. Still floating. Still glowing.' },
-  { id: 5, x: 78, y: 42, label: 'Cart Path', detail: 'Tire tracks consistent with late-night joyride. Speed: reckless.' },
-  { id: 6, x: 55, y: 18, label: 'Tee Box 1', detail: 'Premeditation confirmed. Scorecard found with tomorrow\'s tee time circled.' },
+  { id: 1, x: 58, y: 48, label: 'Fairway 14', detail: 'Primary impact zone. Multiple glowing projectiles observed crossing airspace over the back nine.' },
+  { id: 2, x: 42, y: 38, label: 'Bunker 7', detail: 'Suspect #2 last known position. Sand disturbed in suspicious arc pattern.' },
+  { id: 3, x: 52, y: 14, label: 'W Highland Perimeter', detail: 'Unauthorized approach from residential tree line. Security camera offline (coincidence?).' },
+  { id: 4, x: 36, y: 24, label: 'Pond — North', detail: 'Recovered glow ball floating near the hazard. Still glowing. Goose refused to comment.' },
+  { id: 5, x: 68, y: 52, label: 'Cart Path', detail: 'Tire tracks consistent with late-night joyride. Speed: reckless.' },
+  { id: 6, x: 22, y: 82, label: 'Highland Arena', detail: 'Premeditation confirmed. Scorecard found near the rink. Tomorrow\'s tee time circled.' },
 ] as const
