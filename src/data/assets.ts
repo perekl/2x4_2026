@@ -53,5 +53,6 @@ export const ASSETS = {
   misc: {
     goose: '/assets/misc/goose.png',
     seal: '/assets/misc/government-seal.svg',
+    wantedPoster: '/assets/misc/wanted-poster.png',
   },
 } as const
