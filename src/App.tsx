@@ -46,6 +46,20 @@ function App() {
     if (skipIntro) setIntroDone(true)
   }, [skipIntro])
 
+  // Always start at the top — don't restore scroll position from last visit
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+    window.scrollTo(0, 0)
+
+    const onPageShow = (e: PageTransitionEvent) => {
+      if (e.persisted) window.scrollTo(0, 0)
+    }
+    window.addEventListener('pageshow', onPageShow)
+    return () => window.removeEventListener('pageshow', onPageShow)
+  }, [])
+
   return (
     <div className="app-root relative bg-midnight text-paper min-h-screen overflow-x-hidden">
       <FilmGrain />

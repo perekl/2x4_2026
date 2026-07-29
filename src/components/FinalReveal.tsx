@@ -46,7 +46,7 @@ export function FinalReveal() {
             18 Holes of Golf
           </motion.p>
           <p className="font-mono text-sm text-paper/50 mt-4">
-            Effective: Tomorrow Morning
+            Effective: {CASE.teeTimeLabel}
           </p>
         </motion.div>
 
@@ -82,7 +82,7 @@ export function FinalReveal() {
           </h3>
           <p className="font-mono text-sm text-paper/60 mb-1">Team Name:</p>
           <p className="font-display text-xl md:text-2xl text-neon border border-neon/30 inline-block px-6 py-2 mb-4">
-            {CASE.teamNamePlaceholder}
+            {CASE.teamName}
           </p>
           <p className="font-mono text-xs text-paper/50 tracking-widest">
             COMPETING IN TOMORROW'S TWOSOME TOURNAMENT

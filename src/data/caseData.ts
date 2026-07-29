@@ -4,8 +4,9 @@ export const CASE = {
   status: 'ACTIVE INVESTIGATION',
   defendants: 'The Defendants',
   suspectLabels: ['Suspect #1', 'Suspect #2'] as const,
-  teamNamePlaceholder: '[Your Team Name]',
-  teeTime: new Date('2026-07-30T08:00:00'),
+  teamName: 'Night Boyz',
+  teeTime: new Date(2026, 6, 30, 18, 10, 0), // Jul 30, 2026 — 6:10 PM local
+  teeTimeLabel: 'Tomorrow, 6:10 PM',
 } as const
 
 export const SUSPECTS = [

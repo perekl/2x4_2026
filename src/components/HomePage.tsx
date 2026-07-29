@@ -9,9 +9,9 @@ interface HomePageProps {
 }
 
 const NAV_BUTTONS = [
-  { label: 'Enter Evidence Locker', section: 'evidence', icon: '🔒' },
-  { label: 'Review Case File', section: 'charges', icon: '📋' },
   { label: 'Meet the Suspects', section: 'suspects', icon: '👤' },
+  { label: 'Review Case File', section: 'charges', icon: '📋' },
+  { label: 'Enter Evidence Locker', section: 'evidence', icon: '🔒' },
 ]
 
 export function HomePage({ onNavigate }: HomePageProps) {
